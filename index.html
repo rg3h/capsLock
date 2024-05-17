@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- capsLock index.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>template</title>
+  <meta name="description" content="template"/>
+  <meta name="mobile-web-app-capable"       content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-tap-highlight"  content="no"  />
+  <link rel="apple-touch-icon" href="./src/assets/images/logo/logo256.png"/>
+  <link rel="icon"             href="./src/assets/images/logo/logo256.png"/>
+<!--
+  <link rel="stylesheet"       href="./index.css"/>
+-->
+  <style>
+    body {font-family: helvetica; padding: 1rem;}
+    .recipe {
+      border-radius: 5px;
+      border: solid 1px rgb(150, 150, 150);
+      font-family: monospace;
+      font-size: 0.9rem;
+      padding-right: 1rem;
+      width: fit-content;
+  </style>
+</head>
+<body>
+<h2>regedit the caps-lock key into a control key</h2>
+  <div class="recipe">
+    <ol>
+      <li>regedit HKEY_LOCAL_MACHINE/System/CurrentControlSet/Control/keyboard layout</li>
+      <li>click on it and add a new binary key named <b>Scancode Map</b></li>
+      <li>Set the key to: 00 00 00 00 | 00 00 00 00 | 02 00 00 00 | 1D 00 3A 00 | 00 00 00 00</li>
+    </ol>
+</div>
+
+</body>
+</html>
