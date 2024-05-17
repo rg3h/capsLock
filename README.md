@@ -1,7 +1,7 @@
 <img src="./src/assets/images/logo/logo256.png" height="128" align="left" valign="top"
   alt="windows command to regEdit capsLock" />
 <br>
-<b>regEdit caps-lock key into a control key</b><br>
+<b>regedit caps-lock key into a control key</b><br>
 <sup><sub>
 Deep in the chaotic regime, slight changes in structure almost always cause vast changes in behavior.
 </sub></sup>
